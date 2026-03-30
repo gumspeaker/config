@@ -1,0 +1,562 @@
+{
+  "search.followSymlinks": false,
+  "editor.fontFamily": "Cascadia Code, HACK, Monaco, 'Courier New', Monaco",
+  "leetcode.nodePath": "~/.nvm/versions/node/v22.14.0/bin/node",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontSize": 16,
+  "editor.accessibilitySupport": "off",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.fontLigatures": false,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "explorer.autoReveal": true,
+  "editor.glyphMargin": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
+  "editor.links": false,
+  // "editor.definitionLinkOpensInPeek": true,
+  "editor.lineNumbers": "interval",
+  // "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "boundary",
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "eslint.format.enable": true,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  // 保存时使用eslint 或者tslint 规范代码`
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.fixAll": "explicit",
+    "source.fixAll.prettier": "never"
+  },
+  "editor.fontVariations": true,
+  // 通过使用鼠标滚轮同时按住 Ctrl 可缩放编辑器的字体
+  "editor.mouseWheelZoom": true,
+  // 窗口失去焦点自动保存
+  "files.autoSave": "onFocusChange",
+  "files.associations": {
+    "*.svg": "xml"
+  },
+  // // 配置各个类型的文件使用 prettier 格式代码
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "vscode.typescript-language-features",
+  // },
+  // "[javascriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+    // "json"
+  ],
+  // tslint 设置为警告
+  "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  //替换vscode内置的ts
+  // "typescript.tsdk": "./node_modules/typescript/lib",
+  // styleLint 要求禁用你默认的格式化
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "window.dialogStyle": "custom",
+  "window.nativeTabs": true, // this is great, macOS only
+  "window.titleBarStyle": "custom",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 10,
+  "workbench.list.smoothScrolling": true,
+  // "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 20,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.untrackedChanges": "separate",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.tabs.enabled": true,
+  "scm.diffDecorationsGutterWidth": 2,
+  "debug.onTaskErrors": "debugAnyway",
+  "search.exclude": {
+    "**/.git": true,
+    "**/.github": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "**/yarn.lock": true
+  },
+  //   code runner 运行配置
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ -std=c++23 $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt && rm $fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  // 保存延迟
+  "files.autoSaveDelay": 1000,
+  // 文件移动自动更新路径
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.validate.enable": false,
+  // "js/ts.implicitProjectConfig.checkJs": true,
+  // tslint 检查js
+  "tslint.jsEnable": true,
+  // 开启style lint
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "scss"],
+  "volar.tsPlugin": true,
+  "gitlens.advanced.messages": {
+    "suppressFileNotUnderSourceControlWarning": true,
+    "suppressGitMissingWarning": true
+  },
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "history": false,
+      "remote": false
+    },
+    "editorGroup": {
+      "blame": true,
+      "compare": false
+    },
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "scm": {
+      "authors": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true
+    },
+    "scmGroupInline": {
+      "stash": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false,
+      "stash": true
+    }
+  },
+  "git.enableSmartCommit": true,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "leetcode.workspaceFolder": "/Users/jiusuan/.leetcode",
+  "leetcode.hint.setDefaultLanguage": false,
+  "leetcode.hint.commentDescription": false,
+  "bracketPairColorizer.depreciation-notice": false,
+  "git.ignoreMissingGitWarning": true,
+  "git.rebaseWhenSync": true,
+  "extensions.supportUntrustedWorkspaces": {
+    "byted-ide.dev-environment-manager": {
+      "supported": true
+    }
+  },
+  "remote.SSH.defaultExtensions": ["byted-ide.gallery"],
+  "cmake.cmakePath": "/usr/local/bin/cmake",
+  "cmake.configureOnOpen": true,
+  "remote.SSH.remotePlatform": {
+    "127.0.0.1": "linux"
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  // code spell checker 配置未知词
+  "cSpell.userWords": [
+    "ahooks",
+    "antd",
+    "antv",
+    "applescript",
+    "appstore",
+    "asasa",
+    "autofetch",
+    "autohotkey",
+    "autoincrement",
+    "autoit",
+    "avplayer",
+    "Bnpm",
+    "browserslist",
+    "byted",
+    "Cascader",
+    "cdss",
+    "cemotion",
+    "cmake",
+    "cscript",
+    "dbaeumer",
+    "deactive",
+    "dont",
+    "echart",
+    "ekko",
+    "esbenp",
+    "exusiai",
+    "flink",
+    "formik",
+    "fromemail",
+    "fromname",
+    "Fullfilled",
+    "GDSM",
+    "gdsmanager",
+    "gfortran",
+    "haxe",
+    "hoverable",
+    "iconfacebook",
+    "iconlinkin",
+    "icontwitter",
+    "icss",
+    "ifdef",
+    "ifmacrodef",
+    "ifndef",
+    "immer",
+    "insertmacro",
+    "javac",
+    "jiusuan",
+    "keras",
+    "keystyle",
+    "kitc",
+    "leetcode",
+    "lein",
+    "lessc",
+    "marketpalce",
+    "Monokai",
+    "MSCHAPV",
+    "nestjs",
+    "Nologo",
+    "nums",
+    "nuxt",
+    "osascript",
+    "outgoingserver",
+    "Overridable",
+    "PEAP",
+    "pmmmwh",
+    "pnpm",
+    "postuninstall",
+    "Potal",
+    "qrcode",
+    "raind",
+    "randstr",
+    "reduxjs",
+    "remotehost",
+    "resrecycle",
+    "rmonitor",
+    "rsbuild",
+    "Rscript",
+    "rubberband",
+    "runhaskell",
+    "rustc",
+    "sbcl",
+    "scatterplot",
+    "scriptcs",
+    "scripthost",
+    "shutdowntimer",
+    "Sider",
+    "snmp",
+    "sshpass",
+    "stylelint",
+    "svgr",
+    "tailwindcss",
+    "tfvis",
+    "tiktok",
+    "tiktokshop",
+    "TTLS",
+    "tuya",
+    "tuyacn",
+    "typeorm",
+    "unknow",
+    "unpublish",
+    "vbscript",
+    "vetur",
+    "vite",
+    "vitejs",
+    "Vitesse",
+    "vsicons",
+    "vuetify",
+    "Vuex",
+    "webui"
+  ],
+  "[go]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "typescript.tsserver.log": "off",
+  "byted-ide.dev-environment-manager.showForwardPortNotification": "hidden",
+  "grunt.autoDetect": "on",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "terminal.integrated.shellIntegration.suggestEnabled": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "gitlens.ai.experimental.openai.model": "gpt-4",
+  "gitlens.graph.minimap.additionalTypes": ["localBranches"],
+  "workbench.editor.tabActionLocation": "left",
+  "diffEditor.maxComputationTime": 0,
+  "redhat.telemetry.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
+  "C_Cpp.inlayHints.parameterNames.enabled": true,
+  "C_Cpp.inlayHints.referenceOperator.showSpace": true,
+  "C_Cpp.formatting": "clangFormat",
+  "marscode.enableCodelens": {
+    "enableInlineDocumentation": false,
+    "enableInlineUnitTest": false,
+    "enableInlineExplain": false
+  },
+  "workbench.editor.empty.hint": "hidden",
+  "explorer.confirmPasteNative": false,
+  "gitlens.views.scm.grouped.views": {
+    "commits": true,
+    "branches": true,
+    "remotes": true,
+    "stashes": true,
+    "tags": true,
+    "worktrees": true,
+    "contributors": true,
+    "repositories": false,
+    "searchAndCompare": true,
+    "launchpad": false
+  },
+  "liveServer.settings.host": "192.168.125.145",
+  "i18n-ally.enabledParsers": ["ts", "js", "json"],
+  "i18n-ally.localeCountryMap": {
+    "zh": "CN",
+    "en": "US"
+  },
+  "i18n-ally.translate.promptSource": true,
+  "i18n-ally.localesPaths": ["packages/gns_intl/src"],
+  "terminal.integrated.env.linux": {},
+  "console-ninja.featureSet": "Community",
+  "terminal.integrated.env.osx": {},
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["cSpell", "Grammarly", "eslint"],
+  "trae.enableCodelens": {
+    "enableInlineDocumentation": false,
+    "enableInlineExplain": false
+  },
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
+  "window.menuBarVisibility": "compact",
+  "vue.server.hybridMode": "typeScriptPluginOnly",
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true,
+    "/tmp/postman-http-request-post-response.instructions.md": true,
+    "/tmp/postman-http-request-pre-request.instructions.md": true,
+    "C:\\Users\\xzh\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
+    "C:\\Users\\xzh\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true,
+    "/tmp/postman-collections-post-response.instructions.md": true,
+    "/tmp/postman-collections-pre-request.instructions.md": true,
+    "/tmp/postman-folder-post-response.instructions.md": true,
+    "/tmp/postman-folder-pre-request.instructions.md": true,
+    "C:\\Users\\xzh\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
+    "C:\\Users\\xzh\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
+    "C:\\Users\\xzh\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
+    "C:\\Users\\xzh\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
+    "/var/folders/83/cx9fmg3d4vld48g14cnm65fh0000gn/T/postman-collections-post-response.instructions.md": true,
+    "/var/folders/83/cx9fmg3d4vld48g14cnm65fh0000gn/T/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/83/cx9fmg3d4vld48g14cnm65fh0000gn/T/postman-folder-post-response.instructions.md": true,
+    "/var/folders/83/cx9fmg3d4vld48g14cnm65fh0000gn/T/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/83/cx9fmg3d4vld48g14cnm65fh0000gn/T/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/83/cx9fmg3d4vld48g14cnm65fh0000gn/T/postman-http-request-pre-request.instructions.md": true,
+    "C:\\Users\\zhila\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
+    "C:\\Users\\zhila\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
+    "C:\\Users\\zhila\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
+    "C:\\Users\\zhila\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
+    "C:\\Users\\zhila\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
+    "C:\\Users\\zhila\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true
+  },
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command"
+  ],
+  "i18n-ally.displayLanguage": "zh-hans",
+  "postman.mcp.notifications.postmanMCP": false,
+  "git.ignoreRebaseWarning": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.secondarySideBar.showLabels": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "svelte.enable-ts-plugin": true,
+  "nsis.compiler.pathToMakensis": "",
+  "terminal.integrated.fontFamily": "CaskaydiaCove NFM",
+  "terminal.integrated.fontSize": 20,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.viewSessions.orientation": "stacked",
+  "chat.mcp.gallery.enabled": true,
+  "chat.tools.urls.autoApprove": {
+    "https://code.visualstudio.com": true,
+    "https://github.com/microsoft/vscode/wiki/*": true,
+    "https://github.com/ant-design": true
+  },
+  "python.analysis.typeCheckingMode": "standard",
+  "terminal.integrated.initialHint": false
+  // "typescript.experimental.useTsgo": true
+  // "i18n-ally.sourceLanguage": "en" // 翻译源语言
+  // "i18n-ally.displayLanguage": "zh-hans"
+  // vue 插件配置
+  // "vetur.format.defaultFormatter.js": "prettier",
+  // "vetur.format.defaultFormatter.html": "js-beautify-html",
+  // "vetur.validation.template": false,
+  // "vetur.format.defaultFormatterOptions": {
+  //   "js-beautify-html": {
+  //     "wrap_attributes": "force-aligned"
+  //   }
+  //   // For javascript formatting
+  //   // "prettier": {
+  //   //   "trailingComma": "all",
+  //   //   "railingComma": "all",
+  //   //   "singleQuote": true,
+  //   //   "eslintIntegration": true,
+  //   //   "semi": true
+  //   // }
+  // },
+  // vue3  提示插件
+}
