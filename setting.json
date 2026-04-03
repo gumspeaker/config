@@ -38,13 +38,13 @@
   "files.associations": {
     "*.svg": "xml"
   },
-  // // 配置各个类型的文件使用 prettier 格式代码
-  // "[javascript]": {
-  //   "editor.defaultFormatter": "vscode.typescript-language-features",
-  // },
-  // "[javascriptreact]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // },
+  // 配置各个类型的文件使用 prettier 格式代码
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -415,7 +415,7 @@
   "leetcode.hint.configWebviewMarkdown": false,
   "[python]": {
     "editor.formatOnType": true,
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "ms-python.python"
   },
   "terminal.integrated.shellIntegration.suggestEnabled": true,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
